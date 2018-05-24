@@ -1,0 +1,60 @@
+/* === Header === */
+#masthead .custom-header div.site-branding {
+	background-color:rgba(0,0,0,.5);
+	padding-top:20px;
+}
+.site-branding a {
+	border-radius:100px;
+	overflow:hidden;
+	padding:0px;
+	margin-right:20px;
+}
+.site-header .navigation-top {
+	box-shadow: 1px 1px 5px #ccc;
+	background:#eee;
+}
+@media screen and (min-width: 30em) {
+	ul#top-menu {
+		display:flex;
+		justify-content:center;
+
+	}
+	#top-menu li {
+		margin: 0 10px;
+	}
+	#top-menu li.current-menu-item {
+	}
+}
+
+
+/* === Content === */
+.page.page-one-column header.entry-header {
+	margin-bottom:20px;
+}
+.page .panel-content .entry-header .entry-title {
+	font-size:1.6rem;
+	border-bottom:2px solid #222;
+}
+.page-one-column .panel-content .wrap {
+	max-width:auto;
+}
+.panel-content > .wrap {
+	background-color:white;
+}
+.panel-content {
+	background-color:white;
+}
+
+/* === Footer === */
+.wrap .site-info {
+	width:100%;
+	display:flex;
+	justify-content:center;
+	margin:0 !important
+}
+.social-navigation .social-links-menu {
+	display:none;
+}
+footer.site-footer {
+	margin-top:0;
+}
