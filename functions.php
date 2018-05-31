@@ -12,4 +12,19 @@ function tom_custom_styles() {
 	wp_register_style('tom_custom_styles', get_stylesheet_directory_uri().'/assets/css/custom.css');
 	wp_enqueue_style('tom_custom_styles');
 }
+
+//Add custom post type Hat
+add_action('init', 'tom_register_my_post_types');
+function tom_register_my_post_types() {
+	$args = array(
+		'public' 			=> true,
+		'has_archive' => true,
+		'labels' 			=> array('name' => 'Hats'),
+		'taxonomies' 	=> array('category'),
+		'rewrite' 		=> array('slug' => 'hat'),
+		'supports' 		=> array('title','editor','author','thumbnail','custom-fields')
+	);
+		
+	register_post_type('hats', $args);
+}
 ?>
