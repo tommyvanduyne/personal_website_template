@@ -1,8 +1,12 @@
-/* === Root Variables === */
-:root {
-	--wordpress-color:#0187BE;
-	--music-color:#FF4245;
-	--code-color:#0E9258;
+/* === Global Settings === */
+.entry-content a {
+	color:steelblue;
+	border:0px;
+	box-shadow:none;
+}
+
+ul, ol {
+	padding-left: 40px;
 }
 
 /* === Header === */
@@ -59,8 +63,8 @@
 .panel-content {
 	background-color:white;
 }
-/*
 
+/*
 main {
 	max-width:1000px;
 	margin: 0 auto;
@@ -78,19 +82,6 @@ article:nth-of-type(odd) .panel-image {
 }
 article:nth-of-type(even) .panel-content .wrap {
 	float:right;
-}
-*/
-/*
-article:nth-of-type(even) .panel-image {
-	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-}
-article:nth-of-type(odd) .panel-image {
-	clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-}
-*/
-/*
-.panel-image {
-	clip-path: polygon(25% 0%, 75% 0%, 75% 50%, 100% 50%, 50% 100%, 0% 50%, 25% 50%); 
 }
 */
 
@@ -148,18 +139,6 @@ img.image-border {
 }
 .tom-content p {
 	margin:0;
-}
-.tom-content p a.readmore {
-	border-bottom:0px;
-	box-shadow:none;
-	padding:0;
-	box-sizing:border-box;
-	border-bottom:1px solid #333;
-	line-height:2;
-}
-.tom-content p a.readmore:hover {
-	bottom:4px;
-	border-bottom:2px solid #333;
 }
 @media screen and (min-width: 30em) {
 	.tom-work-grid {
