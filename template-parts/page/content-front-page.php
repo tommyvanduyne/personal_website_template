@@ -57,12 +57,11 @@
 					$counter = 5;
 					while ($myHats->have_posts()): 
 						$myHats->the_post();
-						$meta = get_post_meta( $post->ID, $key = '', $single = false );
-						$color = $meta['color'][0];
+					  $color = get_field('hat_color');
+					  $img = get_field('hat_image');
 						if ($counter-- < 0) break;
-						if (has_post_thumbnail()): ?>
-							<img class="tom-image" src="<?php the_post_thumbnail_url(120); ?>" alt="" width="120" height="120">
-							<?php endif; ?>
+						?>
+							<img class="tom-image" src="<?php echo $img['url']; ?>" alt="" width="120" height="120">
 							<div class='tom-content' style='border:2px solid <?php echo $color; ?>'>
 								<h2 style='border-bottom: 1px dashed <?php echo $color; ?>'> <?php the_title(); ?> </h2>
 								<p><?php the_content(); ?></p>
